@@ -1,0 +1,12 @@
+version: '2'
+
+services: 
+
+  todo-list:
+    build:
+      context: .
+      args: 
+        BUILD-ENVIRONMENT: development
+    
+    ports: 
+      - 80:3000
